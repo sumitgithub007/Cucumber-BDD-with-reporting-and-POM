@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
 import utils.SeleniumDriver;
@@ -17,13 +18,27 @@ public class AfterActionsm {
 	   System.out.println("After run");
 		WebDriver driver = SeleniumDriver.getDriver();
 		//System.out.println(scenario.isFailed());
-		/*if (scenario.isFailed())*/  
+		/*
+		 * if (scenario.isFailed()) {
+		 */
 			byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 		 
+			     String name = scenario.getName();
 				scenario.attach(screenshotBytes,"image/png",scenario.getName());
- 	
+		//}
  		
-		//*///SeleniumDriver.tearDown();
+		
 	}
+	
+	@After
+	public static void tearDown()
+	{
+		SeleniumDriver.tearDown();
+	}
+	
+	
+	
+	
+	
 
 }

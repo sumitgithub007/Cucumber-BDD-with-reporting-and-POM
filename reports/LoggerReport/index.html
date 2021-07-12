@@ -51,6 +51,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -95,11 +103,11 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -112,8 +120,12 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@Search-Mobiles</span></a>
-						    	        <a class="dropdown-item" href="#"><span class="cf">@Search-Mobiles-Positive</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@createAccountonAmazon</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@CreateAmazonAccount-scenario-1</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@createAccountonAmazonUsingExcel</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@CreateAmazonAccount-scenario-Excel</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@Search-Mobiles-Google</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@Search-Mobiles-scenario-1</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -132,13 +144,13 @@
 										<h6 class="mb-3 ml-1">Test Logs</h6>
 											<div class="tsc" status="pass">
 											<div class="st pass test l0" 
-												tags="@Search-Mobiles"
+												tags="@createAccountonAmazon"
 												devices="">
-												<span class="tt">07.05.2021 23:22:48</span>&nbsp;
+												<span class="tt">07.11.2021 19:31:53</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Acceptance testing to validate Search Mobiles Page is working.] started</span>
+												<span class="tn">[Create New Amazon Account] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Search-Mobiles</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @createAccountonAmazon</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -147,14 +159,1358 @@
 												
 											</div>
 											<div class="st pass test l1" 
-												tags="@Search-Mobiles @Search-Mobiles-Positive"
+												tags="@CreateAmazonAccount-scenario-1"
 												devices="">
-												<span class="tt">07.05.2021 23:22:48</span>&nbsp;
+												<span class="tt">07.11.2021 19:31:53</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Validate create new account fuctionality without password] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @CreateAmazonAccount-scenario-1</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags="@createAccountonAmazon @CreateAmazonAccount-scenario-1"
+												devices="">
+												<span class="tt">07.11.2021 19:31:53</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Validate create new account fuctionality without password] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @createAccountonAmazon</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @CreateAmazonAccount-scenario-1</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:31:53</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:31:59</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:31:59</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:00</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded1.png' src='../artifact/embedded1.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:00</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:01</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:01</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:02</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded2.png' src='../artifact/embedded2.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:02</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:02</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded3.png' src='../artifact/embedded3.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded4.png' src='../artifact/embedded4.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded5.png' src='../artifact/embedded5.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter "sumit goyal" , "9898989732 " , "goyalsumit333@gmail.com"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter "sumit goyal" , "9898989732 " , "goyalsumit333@gmail.com"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded6.png' src='../artifact/embedded6.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded7.png' src='../artifact/embedded7.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:07</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded8.png' src='../artifact/embedded8.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags="@createAccountonAmazon @CreateAmazonAccount-scenario-1"
+												devices="">
+												<span class="tt">07.11.2021 19:32:14</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Validate create new account fuctionality without password] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @createAccountonAmazon</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @CreateAmazonAccount-scenario-1</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:14</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:21</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:21</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:22</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded9.png' src='../artifact/embedded9.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:22</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:24</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:24</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:25</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded10.png' src='../artifact/embedded10.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:25</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:25</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded11.png' src='../artifact/embedded11.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:26</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded12.png' src='../artifact/embedded12.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:27</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded13.png' src='../artifact/embedded13.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:27</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter "ankit nigam" , "8783232456 " , "nankit676@gmail.com"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:27</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter "ankit nigam" , "8783232456 " , "nankit676@gmail.com"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:27</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:28</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded14.png' src='../artifact/embedded14.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:28</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:28</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:28</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:28</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded15.png' src='../artifact/embedded15.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:28</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:29</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:29</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:29</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded16.png' src='../artifact/embedded16.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											</div>
+											<div class="tsc" status="pass">
+											<div class="st pass test l0" 
+												tags="@createAccountonAmazonUsingExcel"
+												devices="">
+												<span class="tt">07.11.2021 19:32:36</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">[Create New Amazon Account using Excel] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @createAccountonAmazonUsingExcel</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l1" 
+												tags="@CreateAmazonAccount-scenario-Excel"
+												devices="">
+												<span class="tt">07.11.2021 19:32:36</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Validate create new account fuctionality without password excel] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @CreateAmazonAccount-scenario-Excel</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags="@createAccountonAmazonUsingExcel @CreateAmazonAccount-scenario-Excel"
+												devices="">
+												<span class="tt">07.11.2021 19:32:36</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Validate create new account fuctionality without password excel] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @createAccountonAmazonUsingExcel</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @CreateAmazonAccount-scenario-Excel</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:36</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:43</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:43</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:44</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded17.png' src='../artifact/embedded17.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:46</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:46</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:46</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded18.png' src='../artifact/embedded18.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:46</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:46</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:46</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:47</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded19.png' src='../artifact/embedded19.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:47</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded20.png' src='../artifact/embedded20.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded21.png' src='../artifact/embedded21.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:48</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter details from "Sheet1" and 1] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:50</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter details from "Sheet1" and 1]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:50</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:51</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded22.png' src='../artifact/embedded22.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:51</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:51</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:51</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:51</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded23.png' src='../artifact/embedded23.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:51</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:32:52</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:52</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:32:52</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded24.png' src='../artifact/embedded24.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags="@createAccountonAmazonUsingExcel @CreateAmazonAccount-scenario-Excel"
+												devices="">
+												<span class="tt">07.11.2021 19:32:55</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Validate create new account fuctionality without password excel] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @createAccountonAmazonUsingExcel</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @CreateAmazonAccount-scenario-Excel</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:32:55</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:04</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded25.png' src='../artifact/embedded25.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:07</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded26.png' src='../artifact/embedded26.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:07</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded27.png' src='../artifact/embedded27.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded28.png' src='../artifact/embedded28.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded29.png' src='../artifact/embedded29.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:08</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter details from "Sheet1" and 2] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:09</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter details from "Sheet1" and 2]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:09</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded30.png' src='../artifact/embedded30.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:09</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:10</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:10</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded31.png' src='../artifact/embedded31.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:11</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:11</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:11</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded32.png' src='../artifact/embedded32.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags="@createAccountonAmazonUsingExcel @CreateAmazonAccount-scenario-Excel"
+												devices="">
+												<span class="tt">07.11.2021 19:33:18</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Validate create new account fuctionality without password excel] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @createAccountonAmazonUsingExcel</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @CreateAmazonAccount-scenario-Excel</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:18</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:27</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded33.png' src='../artifact/embedded33.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:27</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:29</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Hello Sign In Accounts & List excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:29</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:29</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded34.png' src='../artifact/embedded34.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:29</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:29</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then "Sign-In" page displays excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:29</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:30</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded35.png' src='../artifact/embedded35.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:30</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on create Your Amazon Account Button excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded36.png' src='../artifact/embedded36.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I will land on "Create Account" page excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded37.png' src='../artifact/embedded37.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter details from "Sheet1" and 3] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:32</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will enter details from "Sheet1" and 3]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:32</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:32</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded38.png' src='../artifact/embedded38.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:32</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:33</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I will click on continue Button excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:33</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded39.png' src='../artifact/embedded39.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user excel] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2021 19:33:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then A message "Enter your password" will be displayed to user excel]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2021 19:33:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2021 19:33:34</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded40.png' src='../artifact/embedded40.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											</div>
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
+												tags="@Search-Mobiles-Google"
+												devices="">
+												<span class="tt">07.11.2021 19:33:37</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Check Google search page.] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @Search-Mobiles-Google</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st fail test l1" 
+												tags="@Search-Mobiles-Google @Search-Mobiles-scenario-1"
+												devices="">
+												<span class="tt">07.11.2021 19:33:37</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[Validate Home Page] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Search-Mobiles</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @Search-Mobiles-Positive</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @Search-Mobiles-Google</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @Search-Mobiles-scenario-1</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -165,14 +1521,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.05.2021 23:22:48</span>&nbsp;
+												<span class="tt">07.11.2021 19:33:37</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.google.com/" of Google] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.05.2021 23:22:55</span>&nbsp;
+													<span class="tt">07.11.2021 19:33:40</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.amazon.in/" of Amazon Website]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the Home Page "https://www.google.com/" of Google]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -180,76 +1536,82 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.05.2021 23:22:55</span>&nbsp;
+												<span class="tt">07.11.2021 19:33:40</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.05.2021 23:22:57</span>&nbsp;
+													<span class="tt">07.11.2021 19:33:40</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
-													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded41.png' src='../artifact/embedded41.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.05.2021 23:22:57</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Mobiles section on flipkart] started</span>
+												<span class="tt">07.11.2021 19:33:40</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Enter "Mobiles" in Google search Box] started</span>
 												
-												<div class="st pass">
-													<span class="tt">07.05.2021 23:23:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I click on Mobiles section on flipkart]</span>
+												<div class="st fail">
+													<span class="tt">07.11.2021 19:33:40</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I Enter "Mobiles" in Google search Box]</span>
 													
-													<span class="td"></span>
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.SearchMobilesGoogle.i_enter_in_google_search_box(SearchMobilesGoogle.java:28)
+	at ?.I Enter "Mobiles" in Google search Box(file:///C:/Users/sumit%20goyal/Pictures/cucumberLatest/CucumberReporting/src/test/resources/feature/GoogleMobileSearch.feature:10)
+</textarea></span>
 												</div>
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.05.2021 23:23:03</span>&nbsp;
+												<span class="tt">07.11.2021 19:33:40</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.05.2021 23:23:04</span>&nbsp;
+													<span class="tt">07.11.2021 19:33:40</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
-													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'></span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../artifact/embedded42.png' src='../artifact/embedded42.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.05.2021 23:23:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then The Electronics section is displayed having following items] started</span>
+												<span class="tt">07.11.2021 19:33:40</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on search Icon] started</span>
 												
-												<div class="st pass">
-													<span class="tt">07.05.2021 23:23:04</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then The Electronics section is displayed having following items]</span>
+												<div class="st skip">
+													<span class="tt">07.11.2021 19:33:40</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on search Icon]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.05.2021 23:23:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)] started</span>
+												<span class="tt">07.11.2021 19:33:40</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Information Reated to mobiles will display] started</span>
 												
-												<div class="st info">
-													<span class="tt">07.05.2021 23:23:04</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[stepDefinitions.AfterActionsm.tearDown(io.cucumber.java.Scenario)]</span>
-													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'></span>
-													<span class="td"></span>
+												<div class="st skip">
+													<span class="tt">07.11.2021 19:33:40</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Information Reated to mobiles will display]</span>
+													
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
 											</div>

@@ -32,16 +32,14 @@ public class SeleniumDriver {
         waitDriver = new WebDriverWait(driver, TIMEOUT);
         driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        String window=driver.getWindowHandle();
-     //   System.out.println("Window ->"+window);
+     
        
     }
 
     public static void openPage(String url) {
     	System.out.println(url);
-    	//System.out.println(driver);
-        driver.get(url);
-        //as usual before hook would have run so we could be saved from  error
+     driver.get(url);
+       
         
     }
 
