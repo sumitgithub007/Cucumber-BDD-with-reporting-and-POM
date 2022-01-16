@@ -24,7 +24,7 @@ jobs:
          # name: Build
           #command: mvn clean
       # Then run your tests!
-      - run:
+      - run: 
           working_directory: /home/circleci/project/
           name: Test
           command: mvn test 
