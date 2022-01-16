@@ -25,7 +25,7 @@ public class SeleniumDriver {
 
     private  SeleniumDriver() {
 
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().arch64().setup();
     	driver = new ChromeDriver();
         driver.manage().window().maximize();
 
