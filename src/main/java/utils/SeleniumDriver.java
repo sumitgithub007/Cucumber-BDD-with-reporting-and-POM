@@ -25,7 +25,7 @@ public class SeleniumDriver {
 
     private  SeleniumDriver() {
 
-        WebDriverManager.chromedriver().arch64().browserInDocker();
+        WebDriverManager.chromedriver().arch64().browserInDocker().setup();
     	driver = new ChromeDriver();
         driver.manage().window().maximize();
 
