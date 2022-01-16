@@ -27,7 +27,7 @@ jobs:
       - run:
           working_directory: /home/circleci/project/
           name: Test
-          command: mvn test
+          command: mvn test 
 
 
 # Invoke jobs via workflows 
