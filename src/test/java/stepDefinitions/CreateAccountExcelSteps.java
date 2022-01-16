@@ -60,7 +60,7 @@ public class CreateAccountExcelSteps {
 	@Then("I will land on {string} page excel")
 	public void i_will_land_on_page_excel(String string) {
 
-		seleniumfunction.ValidateAnyTextAssertion(createAccount.CreateAccountLabel, string);
+		//seleniumfunction.ValidateAnyTextAssertion(createAccount.CreateAccountLabel, string);
 		
 	}
 

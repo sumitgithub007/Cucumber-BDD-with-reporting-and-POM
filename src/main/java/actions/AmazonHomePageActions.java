@@ -12,7 +12,7 @@ public class AmazonHomePageActions {
 	
 	public AmazonHomePageActions()
 	{
-		this.amazonhomepagelocators = new AmazonHomePageLocators();
+		//this.amazonhomepagelocators = new AmazonHomePageLocators(null);
 		PageFactory.initElements(SeleniumDriver.getDriver(),this.amazonhomepagelocators);
 		
 	}

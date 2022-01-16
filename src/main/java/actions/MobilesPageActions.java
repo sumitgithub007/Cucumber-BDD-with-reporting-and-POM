@@ -16,7 +16,7 @@ public class MobilesPageActions {
 	
 	public MobilesPageActions()
 	{
-		this.mobilespagelocators = new MobilesPageLocators();
+		//this.mobilespagelocators = new MobilesPageLocators(driver);
 		PageFactory.initElements(SeleniumDriver.getDriver(),this.mobilespagelocators);
 		
 	}
