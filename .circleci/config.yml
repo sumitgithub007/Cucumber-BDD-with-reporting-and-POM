@@ -20,12 +20,12 @@ jobs:
       - checkout
       # Use mvn clean and package as the standard maven build phase
       - run:
-          working_directory: /home/circleci/project/Cucumber-BDD-with-reporting-and-POM/
+          working_directory: /home/circleci/project/Cucumber-BDD-with-reporting-and-POM/blob/master/
           name: Build
           command: mvn clean
       # Then run your tests!
       - run:
-          working_directory: /home/circleci/project/Cucumber-BDD-with-reporting-and-POM/
+          working_directory: /home/circleci/project/Cucumber-BDD-with-reporting-and-POM/blob/master/
           name: Test
           command: mvn test
 
