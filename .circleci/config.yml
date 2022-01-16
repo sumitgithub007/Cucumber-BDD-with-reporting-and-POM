@@ -24,7 +24,7 @@ jobs:
           command: mvn clean
       # Then run your tests!
       - run:
-          working_directory: /home/circleci/project/ Cucumber-BDD-with-reporting-and-POM/
+          working_directory: /home/circleci/project/Cucumber-BDD-with-reporting-and-POM/
           name: Test
           command: mvn test
 
